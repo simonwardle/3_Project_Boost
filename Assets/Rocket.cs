@@ -24,6 +24,7 @@ public class Rocket : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rigidBody.AddRelativeForce(Vector3.up);
+            print("Space pressed");
         }
 
         if (Input.GetKey(KeyCode.A))
