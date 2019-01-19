@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4893959695814732150}
   m_Layer: 0
   m_Name: Launch Pad
-  m_TagString: Untagged
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8110642361211389480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.9375014, y: 0.6816289, z: 3.9024}
+  m_LocalScale: {x: 11.060652, y: 1.2697698, z: 7.8780336}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9cc6cd2f7b1843e4e81cd101c32d77ba, type: 2}
+  - {fileID: 2100000, guid: 8569fdbd3d0a47547817820b2bcc1763, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 52690409}
   m_Layer: 0
   m_Name: Landing Pad (1)
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52690408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.86, y: 1.83, z: 0}
-  m_LocalScale: {x: 5.9375014, y: 0.6816289, z: 3.9024}
+  m_LocalPosition: {x: -5.3, y: 42.5, z: 0}
+  m_LocalScale: {x: 11.060652, y: 0.8893894, z: 7.8780336}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
