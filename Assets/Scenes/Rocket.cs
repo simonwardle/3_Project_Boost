@@ -22,7 +22,7 @@ public class Rocket : MonoBehaviour
     State state = State.Alive;
 
     int currentLevel = 0;
-    int maxlevel = 2;
+    int maxlevel = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -38,11 +38,21 @@ public class Rocket : MonoBehaviour
     {
         if (state == State.Alive)
         {
+            MoveToNextLevel();
             RespondToThrustInput();
             RespondToRotateInput();
         }
     }
 
+    private void MoveToNextLevel()
+    {
+        if (Input.GetKey(KeyCode.N))
+        {
+            print("Next scene");
+            state = State.Transcending;
+            LoadNextScene();
+        }
+    }
 
     private void RespondToThrustInput()
     {
@@ -59,7 +69,8 @@ public class Rocket : MonoBehaviour
 
     private void ApplyThrust()
     {
-        rigidBody.AddRelativeForce(Vector3.up * mainThrust);
+        //rigidBody.AddRelativeForce(Vector3.up * mainThrust);
+        rigidBody.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
         if (!audioSource.isPlaying)   //so it doesn't layer
         {
             audioSource.PlayOneShot(mainEngine);
