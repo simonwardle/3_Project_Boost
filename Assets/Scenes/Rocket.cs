@@ -22,7 +22,7 @@ public class Rocket : MonoBehaviour
     State state = State.Alive;
 
     int currentLevel = 0;
-    int maxlevel = 5;
+    int maxlevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +31,7 @@ public class Rocket : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         Scene scene = SceneManager.GetActiveScene();
         currentLevel = scene.buildIndex;
+        maxlevel = SceneManager.sceneCountInBuildSettings -1;
     }
 
     // Update is called once per frame
